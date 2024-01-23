@@ -1,0 +1,12 @@
+TO convert the python file into executable:
+
+1> Install module named "pyinstaller":
+	"pip install pyinstaller"
+
+2> Go to particular file location where the python file is saved.
+
+3> Open terminal at the particular directory:
+	"pyinstaller --onefile Python_script.py"
+
+4> If we don't want the console to be running in background:
+	"pyinstaller --noconsole Python_scipt.py"
