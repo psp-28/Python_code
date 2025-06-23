@@ -1,0 +1,13 @@
+Write a Python function `is_valid_email(email)` that uses regular expressions to validate if a given string `email` is a valid email address. The function should return `True` if the email address is valid and `False` otherwise.
+
+
+
+**Explanation:**
+ 
+- The regular expression pattern `r'^[\w\.-]+@[a-zA-Z\d]+\.[a-zA-Z]{2,}$'` is used to validate email addresses.
+- `[\w\.-]+` matches one or more word characters (`\w`), dots (`.`), or dashes (`-`) before the `@` symbol.
+- `@[a-zA-Z\d]+\.[a-zA-Z]{2,}` matches the domain part:
+  - `[a-zA-Z\d]+` matches one or more alphanumeric characters for the domain name.
+  - `\.` matches the dot separator before the top-level domain (TLD).
+  - `[a-zA-Z]{2,}` matches the TLD, which should be at least 2 characters long.
+- `re.match(pattern, email)` checks if the `email` string matches the pattern, and `bool()` converts the result to `True` or `False`.

@@ -1,0 +1,15 @@
+Write a Python function `extract_dates(text)` that uses regular expressions to extract dates in the format "YYYY-MM-DD" from a given string `text`. The function should return a list of strings representing the extracted dates. If no dates are found, the function should return an empty list.
+
+
+Explaination:
+
+**Explanation:**
+ 
+- The regular expression pattern `r'\b\d{4}-\d{2}-\d{2}\b'` is used to match dates in the format "YYYY-MM-DD".
+  - `\b` ensures that the match is a whole word boundary.
+  - `\d{4}` matches exactly four digits (year).
+  - `-` matches the dash separator.
+  - `\d{2}` matches exactly two digits (month and day).
+  - `\b` ensures another word boundary at the end.
+- `re.findall(pattern, text)` searches for all occurrences of the pattern in the `text` string and returns a list of matches.
+- The function `extract_dates` returns this list of extracted dates.
