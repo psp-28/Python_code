@@ -1,0 +1,20 @@
+Create a Python class `Student` that represents a student with attributes `name`, `age`, and `marks`. Implement methods to initialize these attributes, calculate the grade based on marks, and handle exceptions gracefully. Implement the following requirements:
+ 
+1. **Initialization Method (`__init__`):**
+   - Initialize the `name`, `age`, and `marks` attributes.
+   - Ensure `age` is a positive integer. If not, raise a `ValueError` with the message `"Age should be a positive integer"`.
+ 
+2. **Method to Calculate Grade (`calculate_grade`):**
+   - Define a method `calculate_grade()` that calculates the grade based on the marks using the following criteria:
+     - Grade 'A' for marks >= 90
+     - Grade 'B' for marks >= 80 and < 90
+     - Grade 'C' for marks >= 70 and < 80
+     - Grade 'D' for marks >= 60 and < 70
+     - Grade 'F' for marks < 60
+   - Handle the scenario where `marks` is not an integer or float by printing `"Invalid input: Marks should be a number"`.
+   - Return the calculated grade.
+ 
+3. **Method to Display Student Information (`display_info`):**
+   - Implement a method `display_info()` that prints the student's name, age, marks, and calculated grade.
+ 
+Your class should handle exceptions gracefully and ensure that all required attributes are properly initialized and validated.

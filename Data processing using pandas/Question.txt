@@ -1,0 +1,16 @@
+You are tasked with analyzing sales data stored in an Excel spreadsheet to calculate the total sales for each product category and generate a summary report. Write a Python script that reads the Excel file, processes the data, and outputs a summary report in a new Excel file.
+ 
+**Requirements:**
+ 
+1. **Input:**
+   - The input Excel file contains sales data with columns: `Product Category`, `Product Name`, and `Sales Amount`.
+   - Assume the file is named `sales_data.xlsx` and is structured with the first row as headers.
+ 
+2. **Processing:**
+   - Read the data from the Excel file.
+   - Calculate the total sales amount for each unique `Product Category`.
+ 
+3. **Output:**
+   - Generate a summary report in a new Excel file named `sales_summary.xlsx`.
+   - The summary report should have two columns: `Product Category` and `Total Sales`.
+   - Each row should represent a unique product category along with its total sales amount.
